@@ -9,41 +9,52 @@
     
     </head>
     <body>
-        <div class="leaf-image"></div>
+        <div class="leaf-image">
+            
+            <div class="credit">Photo by Halie West</div>
+        </div>
         
-        <div class="content">
+        
+        <form id="form-content">
             <div class="text-prompt">
                 <p>This is not a real online service! You know you need something like this in your life to help you relize your deepest dream.
                     Sign up now to get started.
                 </p>
+                <p>You <em>know</em> you want to!</p>
             </div>
-            <div>
-                <form id="form">
-                    <h2>Let's do this!</h2>
-                    <div class="form-control">
-                        <div class="form-input">
-                            <label for="first-name">FIRST NAME</label>
-                            <input type="text" id="first-name" name="first-name" placeholder="First name">
+            
+            <div class="form-body">
+                <p>Let's do this!</p>
+                
+                <fieldset class="form-controller">     
+                    <div class="form-input">   
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" id="first-name" name="first-name" class="form-control" autocomplete="additional-name" required>
 
-                            <label for="email">EMAIL</label>
-                            <input type="email" id="email" name="email" placeholder="Email">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email" class="form-control" autocomplete="additional-name" required>
 
-                            <label for="password">PASSWORD</label>
-                            <input type="password" id="password" name="password" placeholder="Password">
-                        </div>
-                        <div class="form-input">
-                            <label for="last-name">LAST NAME</label>
-                            <input type="text" id="last-name" name="last-name" placeholder="Last name">
-                            
-                            <label for="phone-num">PHONE NUMBER</label>
-                            <input type="tel" id="phone-num" name="phone-num">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" name="password" class="form-control" required>
+                    </div>
+                    <div class="form-input">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" id="last-name" name="last-name" class="form-control" required>
+                        
+                        <label for="phone-num">PHONE NUMBER</label>
+                        <input type="tel" id="phone-num" name="phone-num" class="form-control" required>
 
-                            <label for="last-name">CONFIRM PASSWORD</label>
-                            <input type="text" id="last-name" name="last-name" placeholder="Last name">
-                        </div>
+                        <label for="confirm">CONFIRM PASSWORD</label>
+                        <input type="text" id="confirm" name="confirm" class="form-control" required>
                     </div>   
-                </form>
+                </fieldset>  
+               
             </div>
-        </div>
+                
+             <div class="btn-log-in">
+                <button type="submit" name="submit">Create Account</button>
+                <p>Already have an account?<a href="#">Log in</a></p>
+            </div> 
+        </form>
     </body>
 </html>
